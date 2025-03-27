@@ -1,0 +1,53 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.content- {
+    display: flex;
+    height: 100%;
+
+}
+
+.s-bar {
+    position: fixed;
+    height: 100vh;
+    width: 300px; 
+    background-color: var.$background-color-base; 
+    color: var.$text-color-base;
+    padding: 20px;
+    .inner {
+    display: flex;
+    flex-direction: column;
+}
+.img-box{
+    width: 150px;
+    height: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+}
+.nav ul {
+    list-style-type: none;
+    padding: 10px;
+}
+ li a{
+    text-decoration: none;
+    color: var.$text-color-base;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    line-height: var.$line-height-base;
+    margin-top: 10px;
+
+}
+span{
+    display: none;
+}
+
+.copy{
+    padding-top: 120px;
+    font-size: small;
+}
+}
+
+
+

@@ -1,0 +1,66 @@
+@use 'core';
+@use 'components';
+@import './abstracts/variables';
+
+// Media query for screens with a max width of 768px//
+@media only screen and (max-width: 768px) {  
+     // Hide navigation and copyright in sidebar//        
+    .s-bar .nav, .copy{                            
+        display: none;   
+    }
+
+     // Set dimensions for the logo image//
+    .img-box{                                     
+        width: 30px;
+        height: 20px;
+     }
+
+    // Display and position the burger menu icon//
+     .burger{                                
+        display: block;
+        position: absolute;
+        left: 23rem;
+        top: 0.5rem;
+        padding: 5px;
+       }
+
+       // Adjust gallery layout to a 2-column grid//
+    .wrap {           
+        flex: 1 0 calc(50% - 20px);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, auto);
+        margin: 0;
+        margin-top: 50px;
+    }
+    // Ensure images in gallery cells are responsive//
+    .cell img {
+        max-width: 100%; 
+        text-align: center;
+    }
+}
+// Media query for screens with a max width of 480px//
+@media only screen and (max-width: 480px) {
+  // Hide navigation and copyright in sidebar//
+    .s-bar .nav, .copy{
+        display: none;
+    }
+  // Set dimensions for the logo image//
+    .img-box{
+        width: 30px;
+        height: 20px;
+     }
+// Display the burger menu icon//
+    .burger{
+        display: block;
+      }
+// Adjust gallery layout to a single-column grid//
+    .wrap {
+        flex: 1 0 calc(100% - 20px);
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, auto);
+        margin: 0;
+        margin-top: 50px;
+    }
+}
