@@ -1,0 +1,13 @@
+body {
+  background-color: white; /* Background color of the body */
+  font-family: Arial, sans-serif;
+}
+/* Styling for the heading inside the container */
+.container h2 {
+  font-weight: 500;
+}
+/* Styling for images inside the slideshow class */
+.slideshow img {
+  width: 800px;
+  height: 500px;
+}
